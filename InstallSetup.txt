@@ -1,0 +1,50 @@
+#!/bin/bash
+
+#Before plugging in the SD-card:
+#apt-get install exfat-fuse exfat-utils
+
+apt-get updates
+apt-get install upgrades
+
+apt-get remove --purge libreoffice*
+apt-get clean
+apt-get autoremove
+
+apt-get install macchanger
+
+apt-get install wifite
+
+#Install CloneZilla
+#apt install clonezilla -y
+
+#flatpak
+
+flatpak install flathub fr.romainvigier.MetadataCleaner
+
+flatpak install flathub com.github.tchx84.Flatseal
+
+flatpak install flathub com.usebottles.bottles
+
+flatpak install flathub org.gnome.GTG
+
+#flatpak install flathub com.spotify.Client
+
+flatpak install flathub org.signal.Signal
+
+flatpak install flathub org.onlyoffice.desktopeditors
+
+#Mastodor TWITTER REPLACEMENT
+flatpak install flathub social.whalebird.WhalebirdDesktop
+
+flatpak install flathub com.visualstudio.code
+
+#Wordlist
+> /usr/share/wordlists/private.txt.gz
+
+apt-get updates
+apt-get install upgrades
+
+#Uninstall OnlyOffice
+#flatpak remove org.onlyoffice.desktopeditors
+
+reboot

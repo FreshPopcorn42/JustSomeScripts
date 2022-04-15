@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+takeInput {
+	echo New password:
+	read passwd
+
+	$passwd >>/usr/share/wordlists/private.txt.gz
+
+	askForMore
+}
+
+askForMore{
+	echo one more?
+	read onemore
+
+	if [onemore == y || onemore == Y]
+	then
+		takeInput
+	else
+		break
+	fi
+}

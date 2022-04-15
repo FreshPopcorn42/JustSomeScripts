@@ -1,0 +1,71 @@
+#!/bin/bash
+#https://stackoverflow.com/questions/24574159/difference-between-alias-rm-and-bin-rm
+#https://unix.stackexchange.com/questions/74213/how-to-change-rm-to-as-a-command-like-mv-trash
+#https://www.linuxquestions.org/questions/linux-newbie-8/how-to-modify-rm-command-815581/
+
+#https://www.youtube.com/results?search_query=make+recovery+image+linux
+#https://www.youtube.com/results?search_query=system+image+backup+linux
+
+> /sbin/ProtocolZero.sh
+
+OneMore = 0
+x = ''
+
+'#Set questions/answers' >> /sbin/ProtocolZero.sh
+while [$Onemore >= 0]
+do
+	$x = '	' * $OneMore
+	echo Question number $OneMore
+	read question
+	ech Answer number $OneMore
+	read answer
+	$OneMore = $OneMore + 1
+
+	$x = '	' * $OneMore
+
+	$x + 'echo $question' >> /sbin/ProtocolZero.sh
+	$x + 'read model' >> /sbin/ProtocolZero.sh
+	'\n' >> /sbin/ProtocolZero.sh
+	$x + 'if [$model == $answer]' >> /sbin/ProtocolZero.sh
+	$x + 'then' >> /sbin/ProtocolZero.sh
+done
+
+'#Delete System' >> /sbin/ProtocolZero.sh
+$x + 'sudo -i' >> /sbin/ProtocolZero.sh
+$x + 'rm -rf /*' >> /sbin/ProtocolZero.sh
+
+'#End ifs/add elses' >> /sbin/ProtocolZero.sh
+for i in ($OneMore)
+do
+$x = $x - '	'
+x + 'else' >> /sbin/ProtocolZero.sh
+$x = $x + '	'
+x + 'echo Sorry bro' >> /sbin/ProtocolZero.sh
+$x = $x - '	'
+x + 'fi' >> /sbin/ProtocolZero.sh
+done
+
+$x = '	'
+
+'else' >> /sbin/ProtocolZero.sh
+x + 'echo Sorry bro' >> /sbin/ProtocolZero.sh
+'fi' >> /sbin/ProtocolZero.sh
+
+alias rm -rf /="/sbin/ProtocolZero"
+'alias rm -rf /="/sbin/ProtocolZero"' >> ~/.bashrc
+alias rm -f /="/sbin/ProtocolZero"
+'alias rm -f /="/sbin/ProtocolZero"' >> ~/.bashrc
+alias rm -r /="/sbin/ProtocolZero"
+'alias rm -r /="/sbin/ProtocolZero"' >> ~/.bashrc
+alias rm /="/sbin/ProtocolZero"
+'alias rm /="/sbin/ProtocolZero"' >> ~/.bashrc
+source ~/.bashrc
+
+echo Wanna check aliases? [y/n]
+read check
+
+if [$check == 'y' || $check == 'Y' || $check == 'yes' || $check == 'Yes' || $check == 'YES']
+then
+	alias
+
+fi
