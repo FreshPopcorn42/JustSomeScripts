@@ -59,6 +59,36 @@ alias rm -r /="/sbin/ProtocolZero"
 'alias rm -r /="/sbin/ProtocolZero"' >> ~/.bashrc
 alias rm /="/sbin/ProtocolZero"
 'alias rm /="/sbin/ProtocolZero"' >> ~/.bashrc
+
+alias sudo rm -rf /="/sbin/ProtocolZero"
+'alias sudo rm -rf /="/sbin/ProtocolZero"' >> ~/.bashrc
+alias sudo rm -f /="/sbin/ProtocolZero"
+'alias sudo rm -f /="/sbin/ProtocolZero"' >> ~/.bashrc
+alias sudo rm -r /="/sbin/ProtocolZero"
+'alias sudo rm -r /="/sbin/ProtocolZero"' >> ~/.bashrc
+alias sudo rm /="/sbin/ProtocolZero"
+'alias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
+
+alias unalias sudo rm -rf /='echo access denied'
+alias sudo unalias sudo rm -rf /='echo access denied'
+'alias unalias sudo rm -rf /="echo access denied"' >> ~/.bashrc
+'alias sudo unalias sudo rm -rf /="echo access denied"' >> ~/.bashrc
+
+alias unalias sudo rm -f /='echo access denied'
+alias sudo unalias sudo rm -f /='echo access denied'
+'alias unalias sudo sudo rm -f /="echo access denied"' >> ~/.bashrc
+'alias sudo unalias sudo rm -f /="echo access denied"' >> ~/.bashrc
+
+alias unalias sudo rm -r /='echo access denied'
+alias sudo unalias sudo rm -r /='echo access denied'
+'alias unalias sudo rm -r /="echo access denied"' >> ~/.bashrc
+'alias sudo unalias sudo rm -r /="echo access denied"' >> ~/.bashrc
+
+alias unalias sudo rm /='echo access denied'
+alias sudo unalias sudo rm /='echo access denied'
+'alias unalias sudo rm /="echo access denied"' >> ~/.bashrc
+'alias sudo unalias sudo rm /="echo access denied"' >> ~/.bashrc
+
 source ~/.bashrc
 
 echo Wanna check aliases? [y/n]
