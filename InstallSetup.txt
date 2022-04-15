@@ -36,7 +36,8 @@ flatpak install flathub org.onlyoffice.desktopeditors
 #Mastodor TWITTER REPLACEMENT
 flatpak install flathub social.whalebird.WhalebirdDesktop
 
-flatpak install flathub com.visualstudio.code
+#flatpak install flathub com.visualstudio.code
+flatpak install flathub io.atom.Atom
 
 #Wordlist
 > /usr/share/wordlists/private.txt.gz
