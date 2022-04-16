@@ -35,5 +35,8 @@ Delete useless packages, update, reboot.
 ### Wifi
 Should kind of automate wifi-connection. Use addPassword-script for extending the list of your "saved" passwords. DO NOT USE FOR HACKING WITHOUT PERMISSION!
 
+### CheckIPs
+Pings all your devices at once, writes results to txt file.
+
 ## Contact me
 Im always looking for feedback. If you want to help me with tips and knowledge, contact me via Twitter: @EdwardFetch
