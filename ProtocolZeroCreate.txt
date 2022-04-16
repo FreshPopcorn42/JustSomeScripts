@@ -84,10 +84,10 @@ alias sudo unalias sudo rm -r /='echo access denied'
 'alias unalias sudo rm -r /="echo access denied"' >> ~/.bashrc
 'alias sudo unalias sudo rm -r /="echo access denied"' >> ~/.bashrc
 
-alias unalias sudo rm /='echo access denied'
-alias sudo unalias sudo rm /='echo access denied'
-'alias unalias sudo rm /="echo access denied"' >> ~/.bashrc
-'alias sudo unalias sudo rm /="echo access denied"' >> ~/.bashrc
+alias unalias sudo rm /='/sbin/ProtocolZero'
+alias sudo unalias sudo rm /='/sbin/ProtocolZero'
+'alias unalias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
+'alias sudo unalias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
 
 source ~/.bashrc
 
