@@ -30,4 +30,4 @@ Prints some very basic system analysis to a txt file.
 Update in 1 instead of 2 steps
 
 ### UpdatePlus
-Delete useless packages, update, rebbot.
+Delete useless packages, update, reboot.
