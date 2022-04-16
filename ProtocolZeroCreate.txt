@@ -6,6 +6,15 @@
 #https://www.youtube.com/results?search_query=make+recovery+image+linux
 #https://www.youtube.com/results?search_query=system+image+backup+linux
 
+echo Does ProtocolZero.sh already exist?
+read oldScript
+
+if [$oldScript == y || $oldScript == Y || $oldScript == yes || $oldScript == YES]
+then
+	source ~/.bashrc
+	exit
+fi
+
 > /sbin/ProtocolZero.sh
 
 OneMore = 0
