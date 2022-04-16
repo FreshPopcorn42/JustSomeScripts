@@ -98,6 +98,13 @@ alias sudo unalias sudo rm /='/sbin/ProtocolZero'
 'alias unalias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
 'alias sudo unalias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
 
+alias bash ProtocolZero="/sbin/ProtocolZero"
+alias ./ProtocolZero="/sbin/ProtocolZero"
+alias /sbin/ProtocolZero="/sbin/ProtocolZero"
+'alias bash ProtocolZero="/sbin/ProtocolZero"' >> ~/.bashrc
+'alias ./ProtocolZero="/sbin/ProtocolZero"' >> ~/.bashrc
+'alias /sbin/ProtocolZero="/sbin/ProtocolZero"' >> ~/.bashrc
+
 source ~/.bashrc
 
 echo Wanna check aliases? [y/n]
