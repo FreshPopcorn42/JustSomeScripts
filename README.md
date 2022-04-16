@@ -38,5 +38,8 @@ Should kind of automate wifi-connection. Use addPassword-script for extending th
 ### CheckIPs
 Pings all your devices at once, writes results to txt file.
 
+### NotScripts
+Just stuff that isnt bash.
+
 ## Contact me
 Im always looking for feedback. If you want to help me with tips and knowledge, contact me via Twitter: @EdwardFetch
