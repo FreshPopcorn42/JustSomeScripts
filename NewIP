@@ -1,7 +1,0 @@
- #!/bin/bash
- 
-ip_address=$(dd if=/dev/urandom bs=4 count=1 2>/dev/null |
-	od -An -tu1 |
-	sed -e 's/^ *//' -e 's/ */./g')
-	
-echo $ip_address
