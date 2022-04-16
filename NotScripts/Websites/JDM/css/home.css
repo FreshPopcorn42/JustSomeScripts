@@ -1,0 +1,31 @@
+/* Hintergrund */
+body{
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "nix nix nix"
+    "nix Maintxt nix"
+  }
+  
+  
+  @media screen and (min-width: 600px) {
+    body{
+      background-image: url(../images/pexels-erik-mclean-4065822.jpg);
+      background-size: cover;
+      grid-template-columns: 1fr 1fr 1fr;
+      background-size: cover;
+      background-position: center;
+    }
+  
+  }
+  
+
+  article.MaintxtHome{
+    grid-area: Maintxt;
+    background: rgba(255, 255, 255, 0.945);
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+  }  

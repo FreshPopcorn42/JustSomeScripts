@@ -1,0 +1,38 @@
+@media screen and (min-width: 600px) {
+    body{
+      grid-template-columns: 1fr 1fr 1fr;
+      background-size: cover;
+    }
+    
+}
+
+
+.nr1, .nr2, p, a{
+    text-align: center;
+    
+}
+
+.black{
+    color: black;
+}
+
+.nr1{
+    padding-bottom: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 300%;
+}
+
+.nr2{
+    padding-bottom: 1em;
+    font-size: 200%;
+}
+
+p, a{
+    padding-bottom: 2em;
+    
+}
+
+.imp2{
+    padding-bottom: 4em;
+}

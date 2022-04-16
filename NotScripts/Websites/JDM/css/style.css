@@ -1,0 +1,81 @@
+
+
+
+/* Mainmethode */
+main{
+  margin-top: 200px;
+  display: grid;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.MaintxtHome{
+  line-height: 150%;
+  
+}
+
+
+/* Burger */
+* { margin: 0; padding: 0; box-sizing: border-box; border: 0; background:none;}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ff4949;
+  padding: 30px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ul {
+  margin-top: 30px;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+.nav-burger {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.nav-burger.close {
+  display: none;
+}
+
+nav.expanded .close {
+  display: block;
+}
+
+nav.expanded .open {
+  display: none;
+}
+
+nav ul {
+  display: none;
+}
+
+nav.expanded ul {
+  display: block;
+}

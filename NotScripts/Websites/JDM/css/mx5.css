@@ -1,0 +1,55 @@
+@media screen and (min-width: 600px) {
+    body{
+        background-image: url("../images/pexels-robert-hess-4824774.jpg");
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "nix txt nix"
+    }
+    img{
+        width: 300px;
+        padding-top: 1em;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 1em;
+    }
+
+    .MaintxtMiata{
+        padding-top: 1em;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 1em;
+    }
+  
+  }
+
+
+
+.TitleMiata{
+    padding-top: 3em;
+    padding-left: 3em;
+    
+}
+
+  .txt{
+    background: rgba(255, 255, 255, 0.945);
+    grid-area: txt;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+
+.MaintxtMiata{
+    padding-top: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
+}
+
+img{
+    width: 300px;
+    padding-top: 1em;
+    padding-left: 3em;
+    padding-bottom: 1em;
+}
