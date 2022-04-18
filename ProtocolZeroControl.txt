@@ -87,35 +87,31 @@ alias rm /="/sbin/ProtocolZero"
 
 
 #2
-alias unalias sudo rm -rf /='ProtocolZero -w'
-'alias unalias sudo rm -rf /="ProtocolZero -w"' >> ~/.bashrc
+alias unalias rm -rf /='ProtocolZero -w'
+'alias unalias rm -rf /="ProtocolZero -w"' >> ~/.bashrc
 
 
 #2
-alias unalias sudo rm -f /*='ProtocolZero -w'
-'alias unalias sudo sudo rm -f /*="ProtocolZero -w"' >> ~/.bashrc
+alias unalias rm -f /*='ProtocolZero -w'
+'alias unalias sudo rm -f /*="ProtocolZero -w"' >> ~/.bashrc
 
 #3
-alias unalias sudo rm -r /='ProtocolZero -w'
-'alias unalias sudo rm -r /="ProtocolZero -w"' >> ~/.bashrc
+alias unalias rm -r /='ProtocolZero -w'
+'alias unalias rm -r /="ProtocolZero -w"' >> ~/.bashrc
 
 #3
-alias unalias sudo rm -r /*='ProtocolZero -w'
-'alias unalias sudo rm -r /*="ProtocolZero -w"' >> ~/.bashrc
+alias unalias rm -r /*='ProtocolZero -w'
+'alias unalias rm -r /*="ProtocolZero -w"' >> ~/.bashrc
 
 
 #Make 'unalias ProtocolZero' to ProtocolZero
 #4
-alias unalias sudo rm /='/sbin/ProtocolZero'
-alias sudo unalias sudo rm /='/sbin/ProtocolZero'
-'alias unalias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
-'alias sudo unalias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
+alias unalias rm /='ProtocolZero -w'
+'alias unalias  rm /="ProtocolZero -w"' >> ~/.bashrc
 
 #4
-alias unalias sudo rm /*='/sbin/ProtocolZero'
-alias sudo unalias sudo rm /*='/sbin/ProtocolZero'
-'alias unalias sudo rm /*="/sbin/ProtocolZero"' >> ~/.bashrc
-'alias sudo unalias sudo rm /*="/sbin/ProtocolZero"' >> ~/.bashrc
+alias unalias rm /*='ProtocolZero -w'
+'alias unalias rm /*="ProtocolZero -w"' >> ~/.bashrc
 
 #Make it happen
 source ~/.bashrc
