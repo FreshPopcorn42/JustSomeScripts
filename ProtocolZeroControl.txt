@@ -8,6 +8,20 @@
 #https://www.youtube.com/results?search_query=make+recovery+image+linux
 #https://www.youtube.com/results?search_query=system+image+backup+linux
 
+
+whatToDoe = $1
+
+if [whatToDoe == -r]
+then
+	realias
+elif [whatToDoe == -u]
+then
+	unalias
+elif [whatToDoe == -w]
+then
+	wizard
+fi
+
 #Reactivate script?
 
 echo Does ProtocolZero.sh already exist?
