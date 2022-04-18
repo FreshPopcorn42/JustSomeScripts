@@ -18,7 +18,7 @@ Installs Flatpak, updates packages.
 Installs all the basic software I use for working on my computer and updates packages.
 
 ### ProtocolZeroControl
-Lets you set security questions for "sudo rm -rf /" - as many as you want. \n
+Lets you set security questions for "sudo rm -rf /" - as many as you want.  
 -r for reactivating an existing ProtocolZero-script, -u to deactivate an existing ProtocolZero-script, -w for running thru a textbased wizard, no parameter to just create a new ProtocolZero (deletes the existing one).
 
 ### ProxyDoe
