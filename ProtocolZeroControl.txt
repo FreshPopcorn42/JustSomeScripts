@@ -39,11 +39,11 @@ x = ''
 while [$Onemore >= 0]
 do
 	$x = '	' * $OneMore
+	$OneMore = $OneMore + 1
 	echo Question number $OneMore
 	read question
 	ech Answer number $OneMore
 	read answer
-	$OneMore = $OneMore + 1
 
 	$x = '	' * $OneMore
 
@@ -87,31 +87,30 @@ alias rm /="/sbin/ProtocolZero"
 
 
 #2
-alias unalias rm -rf /='ProtocolZero -w'
-'alias unalias rm -rf /="ProtocolZero -w"' >> ~/.bashrc
+alias unalias rm -rf /='ProtocolZeroControl -w'
+'alias unalias rm -rf /="ProtocolZeroControl -w"' >> ~/.bashrc
 
 
 #2
-alias unalias rm -f /*='ProtocolZero -w'
-'alias unalias sudo rm -f /*="ProtocolZero -w"' >> ~/.bashrc
+alias unalias rm -f /*='ProtocolZeroControl -w'
+'alias unalias sudo rm -f /*="ProtocolZeroControl -w"' >> ~/.bashrc
 
 #3
-alias unalias rm -r /='ProtocolZero -w'
-'alias unalias rm -r /="ProtocolZero -w"' >> ~/.bashrc
+alias unalias rm -r /='ProtocolZeroControl -w'
+'alias unalias rm -r /="ProtocolZeroControl -w"' >> ~/.bashrc
 
 #3
-alias unalias rm -r /*='ProtocolZero -w'
-'alias unalias rm -r /*="ProtocolZero -w"' >> ~/.bashrc
+alias unalias rm -r /*='ProtocolZeroControl -w'
+'alias unalias rm -r /*="ProtocolZeroControl -w"' >> ~/.bashrc
 
-
-#Make 'unalias ProtocolZero' to ProtocolZero
-#4
-alias unalias rm /='ProtocolZero -w'
-'alias unalias  rm /="ProtocolZero -w"' >> ~/.bashrc
 
 #4
-alias unalias rm /*='ProtocolZero -w'
-'alias unalias rm /*="ProtocolZero -w"' >> ~/.bashrc
+alias unalias rm /='ProtocolZeroControl -w'
+'alias unalias  rm /="ProtocolZeroControl -w"' >> ~/.bashrc
+
+#4
+alias unalias rm /*='ProtocolZeroControl -w'
+'alias unalias rm /*="ProtocolZeroControl -w"' >> ~/.bashrc
 
 #Make it happen
 source ~/.bashrc
