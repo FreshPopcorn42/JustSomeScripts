@@ -7,6 +7,8 @@
 
 #https://www.youtube.com/results?search_query=make+recovery+image+linux
 #https://www.youtube.com/results?search_query=system+image+backup+linux
+#SUSO ALIAS
+#https://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo
 
 "alias sudo='sudo '" >> ~/.bashrc
 
