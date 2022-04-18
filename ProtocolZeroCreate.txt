@@ -25,25 +25,25 @@ read unalias
 if [$unalias == y || $unalias == Y || $unalias == yes || $unalias == YES]
 then
 
-	'#Delete System' >> /sbin/ProtocolZero.sh
-	'echo unalias?' >> /sbin/ProtocolZero.sh
-	'read unalias' >> /sbin/ProtocolZero.sh
-	'if [$unalias == "y"]' >> /sbin/ProtocolZero.sh
-	'then' >> /sbin/ProtocolZero.sh
-		'unalias rm /' >> /sbin/ProtocolZero.sh
-		'unalias rm -r /' >> /sbin/ProtocolZero.sh
-		'unalias rm -f /' >> /sbin/ProtocolZero.sh
-		'unalias rm -rf /' >> /sbin/ProtocolZero.sh
+	#Delete Syste
+	echo unalias?
+	read unalias
+	if [$unalias == "y"]
+	then
+		unalias rm /
+		unalias rm -r /
+		unalias rm -f /
+		unalias rm -rf /
 	
-		'unalias rm /*' >> /sbin/ProtocolZero.sh
-		'unalias rm -r /*' >> /sbin/ProtocolZero.sh
-		'unalias rm -f /*' >> /sbin/ProtocolZero.sh
-		'unalias rm -rf /*' >> /sbin/ProtocolZero.sh
+		unalias rm /*
+		unalias rm -r /*
+		unalias rm -f /*
+		unalias rm -rf /*
 	
 	
-	'else' >> /sbin/ProtocolZero.sh
-	'	exit' >> /sbin/ProtocolZero.sh
-	'fi' >> /sbin/ProtocolZero.sh
+	else
+		exit
+	fi
 	
 	exit
 fi
@@ -138,7 +138,7 @@ alias sudo unalias sudo rm /='/sbin/ProtocolZero'
 'alias unalias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
 'alias sudo unalias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
 
-
+#Make it happen
 source ~/.bashrc
 
 echo Wanna check aliases? [y/n]
