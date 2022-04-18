@@ -20,15 +20,15 @@ then
 	read realias
 	if [$realias == "y"]
 	then
-		alias rm /
-		alias rm -r /
-		alias rm -f /
-		alias rm -rf /
+		alias rm /="/sbin/ProtocolZero"
+		alias rm -r /="/sbin/ProtocolZero"
+		alias rm -f /="/sbin/ProtocolZero"
+		alias rm -rf /="/sbin/ProtocolZero"
 	
-		alias rm /*
-		alias rm -r /*
-		alias rm -f /*
-		alias rm -rf /*
+		alias rm /*="/sbin/ProtocolZero"
+		alias rm -r /*="/sbin/ProtocolZero"
+		alias rm -f /*="/sbin/ProtocolZero"
+		alias rm -rf /*="/sbin/ProtocolZero"
 	exit
 fi
 
