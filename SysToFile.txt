@@ -1,7 +1,5 @@
 #!/bin/bash
 
-mkdir /home/$username/MySysArchive
-
 > /home/$username/MySys$date.sh
 
 #Get user
