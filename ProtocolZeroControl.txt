@@ -11,66 +11,22 @@
 
 whatToDoe = $1
 
-if [whatToDoe == -r]
+if [$whatToDoe == -r]
 then
 	realias
-elif [whatToDoe == -u]
+elif [$whatToDoe == -u]
 then
 	unalias
-elif [whatToDoe == -w]
+elif [$whatToDoe == -w]
 then
 	wizard
 fi
 
-#Reactivate script?
+wizard () {
 
-echo Does ProtocolZero.sh already exist?
-read oldScript
+realias
 
-if [$oldScript == y || $oldScript == Y || $oldScript == yes || $oldScript == YES]
-then
-	#Restore System
-	echo Re-alias?
-	read realias
-	if [$realias == "y"]
-	then
-		alias rm /="/sbin/ProtocolZero"
-		alias rm -r /="/sbin/ProtocolZero"
-		alias rm -f /="/sbin/ProtocolZero"
-		alias rm -rf /="/sbin/ProtocolZero"
-	
-		alias rm /*="/sbin/ProtocolZero"
-		alias rm -r /*="/sbin/ProtocolZero"
-		alias rm -f /*="/sbin/ProtocolZero"
-		alias rm -rf /*="/sbin/ProtocolZero"
-	exit
-fi
-
-
-#Unalias
-echo Unalias ProtocolZero?
-read unalias
-
-if [$unalias == y || $unalias == Y || $unalias == yes || $unalias == YES]
-then
-
-	#Delete System
-	echo unalias?
-	read unalias
-	if [$unalias == "y"]
-	then
-		unalias rm /
-		unalias rm -r /
-		unalias rm -f /
-		unalias rm -rf /
-	
-		unalias rm /*
-		unalias rm -r /*
-		unalias rm -f /*
-		unalias rm -rf /*
-	exit
-fi
-
+unalias
 
 
 #Else: Make new script
@@ -191,3 +147,60 @@ then
 	alias
 
 fi
+
+
+#Functions
+
+realias () {
+#Reactivate script?
+
+echo Does ProtocolZero.sh already exist?
+read oldScript
+
+if [$oldScript == y || $oldScript == Y || $oldScript == yes || $oldScript == YES]
+then
+	#Restore System
+	echo Re-alias?
+	read realias
+	if [$realias == "y"]
+	then
+		alias rm /="/sbin/ProtocolZero"
+		alias rm -r /="/sbin/ProtocolZero"
+		alias rm -f /="/sbin/ProtocolZero"
+		alias rm -rf /="/sbin/ProtocolZero"
+	
+		alias rm /*="/sbin/ProtocolZero"
+		alias rm -r /*="/sbin/ProtocolZero"
+		alias rm -f /*="/sbin/ProtocolZero"
+		alias rm -rf /*="/sbin/ProtocolZero"
+	exit
+fi
+}
+
+
+
+unalias () {
+echo Unalias ProtocolZero?
+read unalias
+
+if [$unalias == y || $unalias == Y || $unalias == yes || $unalias == YES]
+then
+
+	#Delete System
+	echo unalias?
+	read unalias
+	if [$unalias == "y"]
+	then
+		unalias rm /
+		unalias rm -r /
+		unalias rm -f /
+		unalias rm -rf /
+	
+		unalias rm /*
+		unalias rm -r /*
+		unalias rm -f /*
+		unalias rm -rf /*
+	exit
+fi
+
+}
