@@ -11,13 +11,13 @@
 
 whatToDoe = $1
 
-if [$whatToDoe == -r]
+if [$whatToDoe == "-r"]
 then
 	realias
-elif [$whatToDoe == -u]
+elif [$whatToDoe == "-u"]
 then
 	unalias
-elif [$whatToDoe == -w]
+elif [$whatToDoe == "-w"]
 then
 	wizard
 fi
