@@ -8,6 +8,7 @@
 #https://www.youtube.com/results?search_query=make+recovery+image+linux
 #https://www.youtube.com/results?search_query=system+image+backup+linux
 
+"alias sudo='sudo '" >> ~/.bashrc
 
 whatToDoe = $1
 
@@ -82,39 +83,23 @@ alias rm -r /="/sbin/ProtocolZero"
 alias rm /="/sbin/ProtocolZero"
 'alias rm /="/sbin/ProtocolZero"' >> ~/.bashrc
 
-#1
-alias sudo rm -rf /*="/sbin/ProtocolZero"
-'alias sudo rm -rf /*="/sbin/ProtocolZero"' >> ~/.bashrc
-alias sudo rm -f /*="/sbin/ProtocolZero"
-'alias sudo rm -f /*="/sbin/ProtocolZero"' >> ~/.bashrc
-alias sudo rm -r /*="/sbin/ProtocolZero"
-'alias sudo rm -r /*="/sbin/ProtocolZero"' >> ~/.bashrc
-alias sudo rm /*="/sbin/ProtocolZero"
-'alias sudo rm /*="/sbin/ProtocolZero"' >> ~/.bashrc
 
 #2
-alias unalias sudo rm -rf /='echo access denied'
-alias sudo unalias sudo rm -rf /='echo access denied'
-'alias unalias sudo rm -rf /="echo access denied"' >> ~/.bashrc
-'alias sudo unalias sudo rm -rf /="echo access denied"' >> ~/.bashrc
+alias unalias sudo rm -rf /='ProtocolZero -w'
+'alias unalias sudo rm -rf /="ProtocolZero -w"' >> ~/.bashrc
+
 
 #2
-alias unalias sudo rm -f /*='echo access denied'
-alias sudo unalias sudo rm -f /*='echo access denied'
-'alias unalias sudo sudo rm -f /*="echo access denied"' >> ~/.bashrc
-'alias sudo unalias sudo rm -f /*="echo access denied"' >> ~/.bashrc
+alias unalias sudo rm -f /*='ProtocolZero -w'
+'alias unalias sudo sudo rm -f /*="ProtocolZero -w"' >> ~/.bashrc
 
 #3
-alias unalias sudo rm -r /='echo access denied'
-alias sudo unalias sudo rm -r /='echo access denied'
-'alias unalias sudo rm -r /="echo access denied"' >> ~/.bashrc
-'alias sudo unalias sudo rm -r /="echo access denied"' >> ~/.bashrc
+alias unalias sudo rm -r /='ProtocolZero -w'
+'alias unalias sudo rm -r /="ProtocolZero -w"' >> ~/.bashrc
 
 #3
-alias unalias sudo rm -r /*='echo access denied'
-alias sudo unalias sudo rm -r /*='echo access denied'
-'alias unalias sudo rm -r /*="echo access denied"' >> ~/.bashrc
-'alias sudo unalias sudo rm -r /*="echo access denied"' >> ~/.bashrc
+alias unalias sudo rm -r /*='ProtocolZero -w'
+'alias unalias sudo rm -r /*="ProtocolZero -w"' >> ~/.bashrc
 
 
 #Make 'unalias ProtocolZero' to ProtocolZero
