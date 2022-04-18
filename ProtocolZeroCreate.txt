@@ -13,7 +13,20 @@ read oldScript
 
 if [$oldScript == y || $oldScript == Y || $oldScript == yes || $oldScript == YES]
 then
-	source ~/.bashrc
+	#Restore System
+	echo Re-alias?
+	read realias
+	if [$realias == "y"]
+	then
+		alias rm /
+		alias rm -r /
+		alias rm -f /
+		alias rm -rf /
+	
+		alias rm /*
+		alias rm -r /*
+		alias rm -f /*
+		alias rm -rf /*
 	exit
 fi
 
@@ -25,7 +38,7 @@ read unalias
 if [$unalias == y || $unalias == Y || $unalias == yes || $unalias == YES]
 then
 
-	#Delete Syste
+	#Delete System
 	echo unalias?
 	read unalias
 	if [$unalias == "y"]
@@ -39,12 +52,6 @@ then
 		unalias rm -r /*
 		unalias rm -f /*
 		unalias rm -rf /*
-	
-	
-	else
-		exit
-	fi
-	
 	exit
 fi
 
