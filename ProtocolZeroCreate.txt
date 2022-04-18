@@ -40,15 +40,14 @@ then
 		'unalias rm -f /*' >> /sbin/ProtocolZero.sh
 		'unalias rm -rf /*' >> /sbin/ProtocolZero.sh
 	
-	'elif [$unalias == "n"]' >> /sbin/ProtocolZero.sh
-	'then' >> /sbin/ProtocolZero.sh
-		$x + 'sudo -i' >> /sbin/ProtocolZero.sh
-		$x + 'rm -rf /*' >> /sbin/ProtocolZero.sh
+	
 	'else' >> /sbin/ProtocolZero.sh
 	'	exit' >> /sbin/ProtocolZero.sh
 	'fi' >> /sbin/ProtocolZero.sh
-
+	
+	exit
 fi
+
 
 
 #Else: Make new script
