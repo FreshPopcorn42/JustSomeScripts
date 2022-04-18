@@ -6,6 +6,8 @@
 #https://www.youtube.com/results?search_query=make+recovery+image+linux
 #https://www.youtube.com/results?search_query=system+image+backup+linux
 
+#Reactivate script?
+
 echo Does ProtocolZero.sh already exist?
 read oldScript
 
@@ -15,10 +17,48 @@ then
 	exit
 fi
 
+
+#Unalias
+echo Unalias ProtocolZero?
+read unalias
+
+if [$unalias == y || $unalias == Y || $unalias == yes || $unalias == YES]
+then
+
+	'#Delete System' >> /sbin/ProtocolZero.sh
+	'echo unalias?' >> /sbin/ProtocolZero.sh
+	'read unalias' >> /sbin/ProtocolZero.sh
+	'if [$unalias == "y"]' >> /sbin/ProtocolZero.sh
+	'then' >> /sbin/ProtocolZero.sh
+		'unalias rm /' >> /sbin/ProtocolZero.sh
+		'unalias rm -r /' >> /sbin/ProtocolZero.sh
+		'unalias rm -f /' >> /sbin/ProtocolZero.sh
+		'unalias rm -rf /' >> /sbin/ProtocolZero.sh
+	
+		'unalias rm /*' >> /sbin/ProtocolZero.sh
+		'unalias rm -r /*' >> /sbin/ProtocolZero.sh
+		'unalias rm -f /*' >> /sbin/ProtocolZero.sh
+		'unalias rm -rf /*' >> /sbin/ProtocolZero.sh
+	
+	'elif [$unalias == "n"]' >> /sbin/ProtocolZero.sh
+	'then' >> /sbin/ProtocolZero.sh
+		$x + 'sudo -i' >> /sbin/ProtocolZero.sh
+		$x + 'rm -rf /*' >> /sbin/ProtocolZero.sh
+	'else' >> /sbin/ProtocolZero.sh
+	'	exit' >> /sbin/ProtocolZero.sh
+	'fi' >> /sbin/ProtocolZero.sh
+
+fi
+
+
+#Else: Make new script
+
 > /sbin/ProtocolZero.sh
 
 OneMore = 0
 x = ''
+
+#Set questions/answers
 
 '#Set questions/answers' >> /sbin/ProtocolZero.sh
 while [$Onemore >= 0]
@@ -39,29 +79,8 @@ do
 	$x + 'then' >> /sbin/ProtocolZero.sh
 done
 
-'#Delete System' >> /sbin/ProtocolZero.sh
-'echo unalias?'
-'read unalias'
-'if [$unalias == "y"]'
-'then'
-	'unalias rm /'
-	'unalias rm -r /'
-	'unalias rm -f /'
-	'unalias rm -rf /'
-	
-	'unalias rm /*'
-	'unalias rm -r /*'
-	'unalias rm -f /*'
-	'unalias rm -rf /*'
-	
-'elif [$unalias == "n"]'
-'then'
-	$x + 'sudo -i' >> /sbin/ProtocolZero.sh
-	$x + 'rm -rf /*' >> /sbin/ProtocolZero.sh
-'else'
-	'exit'
-'fi'
 
+#End ifs
 
 '#End ifs/add elses' >> /sbin/ProtocolZero.sh
 for i in ($OneMore)
@@ -80,6 +99,7 @@ $x = '	'
 x + 'echo Sorry bro' >> /sbin/ProtocolZero.sh
 'fi' >> /sbin/ProtocolZero.sh
 
+#Make 'delete system' to ProtocolZero
 alias rm -rf /="/sbin/ProtocolZero"
 'alias rm -rf /="/sbin/ProtocolZero"' >> ~/.bashrc
 alias rm -f /="/sbin/ProtocolZero"
@@ -113,6 +133,7 @@ alias sudo unalias sudo rm -r /='echo access denied'
 'alias unalias sudo rm -r /="echo access denied"' >> ~/.bashrc
 'alias sudo unalias sudo rm -r /="echo access denied"' >> ~/.bashrc
 
+#Make 'unalias ProtocolZero' to ProtocolZero
 alias unalias sudo rm /='/sbin/ProtocolZero'
 alias sudo unalias sudo rm /='/sbin/ProtocolZero'
 'alias unalias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
