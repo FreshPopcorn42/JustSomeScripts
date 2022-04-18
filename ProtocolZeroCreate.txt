@@ -1,4 +1,6 @@
 #!/bin/bash
+
+#Might be helpful:
 #https://stackoverflow.com/questions/24574159/difference-between-alias-rm-and-bin-rm
 #https://unix.stackexchange.com/questions/74213/how-to-change-rm-to-as-a-command-like-mv-trash
 #https://www.linuxquestions.org/questions/linux-newbie-8/how-to-modify-rm-command-815581/
@@ -106,6 +108,7 @@ x + 'echo Sorry bro' >> /sbin/ProtocolZero.sh
 'fi' >> /sbin/ProtocolZero.sh
 
 #Make 'delete system' to ProtocolZero
+#1
 alias rm -rf /="/sbin/ProtocolZero"
 'alias rm -rf /="/sbin/ProtocolZero"' >> ~/.bashrc
 alias rm -f /="/sbin/ProtocolZero"
@@ -115,35 +118,53 @@ alias rm -r /="/sbin/ProtocolZero"
 alias rm /="/sbin/ProtocolZero"
 'alias rm /="/sbin/ProtocolZero"' >> ~/.bashrc
 
-alias sudo rm -rf /="/sbin/ProtocolZero"
-'alias sudo rm -rf /="/sbin/ProtocolZero"' >> ~/.bashrc
-alias sudo rm -f /="/sbin/ProtocolZero"
-'alias sudo rm -f /="/sbin/ProtocolZero"' >> ~/.bashrc
-alias sudo rm -r /="/sbin/ProtocolZero"
-'alias sudo rm -r /="/sbin/ProtocolZero"' >> ~/.bashrc
-alias sudo rm /="/sbin/ProtocolZero"
-'alias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
+#1
+alias sudo rm -rf /*="/sbin/ProtocolZero"
+'alias sudo rm -rf /*="/sbin/ProtocolZero"' >> ~/.bashrc
+alias sudo rm -f /*="/sbin/ProtocolZero"
+'alias sudo rm -f /*="/sbin/ProtocolZero"' >> ~/.bashrc
+alias sudo rm -r /*="/sbin/ProtocolZero"
+'alias sudo rm -r /*="/sbin/ProtocolZero"' >> ~/.bashrc
+alias sudo rm /*="/sbin/ProtocolZero"
+'alias sudo rm /*="/sbin/ProtocolZero"' >> ~/.bashrc
 
+#2
 alias unalias sudo rm -rf /='echo access denied'
 alias sudo unalias sudo rm -rf /='echo access denied'
 'alias unalias sudo rm -rf /="echo access denied"' >> ~/.bashrc
 'alias sudo unalias sudo rm -rf /="echo access denied"' >> ~/.bashrc
 
-alias unalias sudo rm -f /='echo access denied'
-alias sudo unalias sudo rm -f /='echo access denied'
-'alias unalias sudo sudo rm -f /="echo access denied"' >> ~/.bashrc
-'alias sudo unalias sudo rm -f /="echo access denied"' >> ~/.bashrc
+#2
+alias unalias sudo rm -f /*='echo access denied'
+alias sudo unalias sudo rm -f /*='echo access denied'
+'alias unalias sudo sudo rm -f /*="echo access denied"' >> ~/.bashrc
+'alias sudo unalias sudo rm -f /*="echo access denied"' >> ~/.bashrc
 
+#3
 alias unalias sudo rm -r /='echo access denied'
 alias sudo unalias sudo rm -r /='echo access denied'
 'alias unalias sudo rm -r /="echo access denied"' >> ~/.bashrc
 'alias sudo unalias sudo rm -r /="echo access denied"' >> ~/.bashrc
 
+#3
+alias unalias sudo rm -r /*='echo access denied'
+alias sudo unalias sudo rm -r /*='echo access denied'
+'alias unalias sudo rm -r /*="echo access denied"' >> ~/.bashrc
+'alias sudo unalias sudo rm -r /*="echo access denied"' >> ~/.bashrc
+
+
 #Make 'unalias ProtocolZero' to ProtocolZero
+#4
 alias unalias sudo rm /='/sbin/ProtocolZero'
 alias sudo unalias sudo rm /='/sbin/ProtocolZero'
 'alias unalias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
 'alias sudo unalias sudo rm /="/sbin/ProtocolZero"' >> ~/.bashrc
+
+#4
+alias unalias sudo rm /*='/sbin/ProtocolZero'
+alias sudo unalias sudo rm /*='/sbin/ProtocolZero'
+'alias unalias sudo rm /*="/sbin/ProtocolZero"' >> ~/.bashrc
+'alias sudo unalias sudo rm /*="/sbin/ProtocolZero"' >> ~/.bashrc
 
 #Make it happen
 source ~/.bashrc
