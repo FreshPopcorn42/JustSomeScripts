@@ -22,12 +22,6 @@ then
 	wizard
 fi
 
-wizard () {
-
-realias
-
-unalias
-
 
 #Else: Make new script
 
@@ -203,4 +197,12 @@ then
 	exit
 fi
 
+}
+
+
+wizard () {
+
+realias
+
+unalias
 }
