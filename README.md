@@ -42,6 +42,9 @@ Pings all your devices at once, writes results to txt file.
 ### USB
 Helps you mount/unmount usb with less typing.
 
+### brightness
+Helps you regulate display brightness. You should start at 2.5.
+
 ### NotScripts
 Just stuff that isnt bash.
 
