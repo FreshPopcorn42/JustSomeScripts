@@ -39,6 +39,9 @@ Should kind of automate wifi-connection. Use addPassword-script for extending th
 ### CheckIPs
 Pings all your devices at once, writes results to txt file.
 
+### USB
+Helps you mount/unmount usb with less typing.
+
 ### NotScripts
 Just stuff that isnt bash.
 
