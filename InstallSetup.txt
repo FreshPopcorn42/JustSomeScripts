@@ -33,9 +33,9 @@ flatpak install flathub org.gnome.GTG
 
 flatpak install flathub org.signal.Signal
 
-#flatpak install flathub org.onlyoffice.desktopeditors
+flatpak install flathub org.onlyoffice.desktopeditors
 
-flatpak install flathub org.libreoffice.LibreOffice
+#flatpak install flathub org.libreoffice.LibreOffice
 
 #Mastodor TWITTER REPLACEMENT
 flatpak install flathub social.whalebird.WhalebirdDesktop
