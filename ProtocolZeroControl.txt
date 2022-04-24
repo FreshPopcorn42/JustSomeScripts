@@ -112,6 +112,18 @@ alias unalias rm /='ProtocolZeroControl -w'
 alias unalias rm /*='ProtocolZeroControl -w'
 'alias unalias rm /*="ProtocolZeroControl -w"' >> ~/.bashrc
 
+#5
+alias ProtocolZero='ProtocolZeroControl -w'
+alias /sbin/ProtocolZero='ProtocolZeroControl -w'
+alias /bin/ProtocolZero='ProtocolZeroControl -w'
+alias ./ProtocolZero='ProtocolZeroControl -w'
+
+#5
+alias ProtocolZero='ProtocolZeroControl -w' >> ~/.bashrc
+alias /sbin/ProtocolZero='ProtocolZeroControl -w' >> ~/.bashrc
+alias /bin/ProtocolZero='ProtocolZeroControl -w' >> ~/.bashrc
+alias ./ProtocolZero='ProtocolZeroControl -w' >> ~/.bashrc
+
 #Make it happen
 source ~/.bashrc
 
