@@ -16,13 +16,13 @@ whatToDoe = $1
 
 if [$whatToDoe == "-r"]
 then
-	realias
+	ProtocolZero -r
 elif [$whatToDoe == "-u"]
 then
-	unalias
+	ProtocolZero -u
 elif [$whatToDoe == "-w"]
 then
-	wizard
+	ProtocolZero -w
 fi
 
 
