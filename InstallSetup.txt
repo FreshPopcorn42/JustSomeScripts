@@ -60,6 +60,8 @@ sudo apt-get install -y tcpdump
 sudo apt-get install -y netdiscover
 sudo apt install nmap
 
+flatpak update
+
 sudo apt-get update -y
 apt-get updates
 apt-get install upgrades
