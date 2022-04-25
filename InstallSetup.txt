@@ -44,7 +44,7 @@ flatpak install flathub social.whalebird.WhalebirdDesktop
 #flatpak install flathub com.visualstudio.code
 flatpak install flathub io.atom.Atom
 
-#Wordlist
+#Wordlist (needed for my wifi-scripts, see wifi-folder in this repository)
 > /usr/share/wordlists/private.txt.gz
 
 sudo apt-get -y install dirb
