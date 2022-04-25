@@ -3,6 +3,7 @@
 #Before plugging in the SD-card:
 #apt-get install exfat-fuse exfat-utils
 
+sudo apt-get update -y
 apt-get updates
 apt-get install upgrades
 
@@ -46,6 +47,20 @@ flatpak install flathub io.atom.Atom
 #Wordlist
 > /usr/share/wordlists/private.txt.gz
 
+sudo apt-get -y install dirb
+sudo apt-get install -y cewl
+sudo apt-get install -y netcat
+sudo apt-get install -y binwalk
+sudo apt-get install -y cl-base64
+sudo apt-get install -y aircrack-ng
+apt-get install wget
+sudo apt-get install -y tcpdump
+#snmpset/snmpwalk
+#netdiscover
+sudo apt-get install -y netdiscover
+sudo apt install nmap
+
+sudo apt-get update -y
 apt-get updates
 apt-get install upgrades
 
