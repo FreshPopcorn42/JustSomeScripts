@@ -46,8 +46,9 @@ flatpak install flathub io.atom.Atom
 
 #Games
 flatpak install flathub org.srb2.SRB2
+flatpak install flathub org.gnome.TwentyFortyEight
 # Games wishlist
-# flatpak install flathub org.sonic3air.Sonic3AIR
+# flatpak install flathub org.sonic3air.Sonic3AIR (needs the original to be installed, for me, not worth the diskspace)
 
 #Wordlist (needed for my wifi-scripts, see wifi-folder in this repository)
 > /usr/share/wordlists/private.txt.gz
