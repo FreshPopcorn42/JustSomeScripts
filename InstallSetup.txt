@@ -44,6 +44,11 @@ flatpak install flathub social.whalebird.WhalebirdDesktop
 #flatpak install flathub com.visualstudio.code
 flatpak install flathub io.atom.Atom
 
+#Games
+flatpak install flathub org.srb2.SRB2
+# Games wishlist
+# flatpak install flathub org.sonic3air.Sonic3AIR
+
 #Wordlist (needed for my wifi-scripts, see wifi-folder in this repository)
 > /usr/share/wordlists/private.txt.gz
 
