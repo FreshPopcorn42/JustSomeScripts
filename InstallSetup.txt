@@ -46,6 +46,37 @@ flatpak install flathub io.atom.Atom
 
 #Browser
 flatpak install flathub org.mozilla.firefox
+#Browser-extension:
+
+EXTENSIONSDIR="/usr/lib/firefox-addons/extensions"
+TMP="/tmp/firefox-extension-install-temp"
+
+[ x"$1" == "x" ] || [ ! -f $1 ] && echo "Specify valid .xpi file as argument." && exit 1
+
+sudo rm -rf $TMP 2>/dev/null
+mkdir -p "$TMP"
+trap "sudo rm -rf $TMP 2>/dev/null" 1 2 3 15
+unzip "$1" -d "$TMP" &> /dev/null
+
+for token in `cat $TMP/install.rdf` ; do
+	echo "$token" | grep "urn:mozilla:install-manifest" &> /dev/null && after_manifest_declaration=true
+	if $after_manifest_declaration; then
+		if echo "$token" | grep 'em:id=\"' ; then
+			extension_id=`echo "$token" | sed 's/.*em:id="\(.*\)".*/\1/'`
+		elif echo "$token" | grep '<em:id>' ; then
+			extension_id=`echo "$token" | sed 's#.*<em:id>\(.*\)</em:id>.*#\1#'`
+		fi
+		[ x"$extension_id" == "x" ] || break
+	fi
+done
+
+rm -rf "$EXTENSIONSDIR/$extension_id" 2>/dev/null
+[ x"$extension_id" == "x" ] && echo "Could not determine extension id" && exit 1;
+sudo mkdir -p "$EXTENSIONSDIR"
+sudo mv "$TMP" "$EXTENSIONSDIR/$extension_id" && echo "$(basename $1) installed to $EXTENSIONSDIR/$extension_id"
+
+sudo rm -rf $TMP 2>/dev/null
+#Credits to andres-erbsen:
 #https://gist.github.com/andres-erbsen/1307745
 
 #Games
