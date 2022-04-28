@@ -44,6 +44,10 @@ flatpak install flathub social.whalebird.WhalebirdDesktop
 #flatpak install flathub com.visualstudio.code
 flatpak install flathub io.atom.Atom
 
+#Browser
+flatpak install flathub org.mozilla.firefox
+#https://gist.github.com/andres-erbsen/1307745
+
 #Games
 flatpak install flathub org.srb2.SRB2
 flatpak install flathub org.gnome.TwentyFortyEight
