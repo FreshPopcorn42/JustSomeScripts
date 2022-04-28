@@ -40,7 +40,7 @@ Should kind of automate wifi-connection. Use addPassword-script for extending th
 Pings all your devices at once, writes results to txt file.
 
 ### USB
-Helps you mount/unmount usb with less typing.
+Helps you mount/unmount USB with less typing.
 
 ### brightness
 Helps you regulate display brightness. You should start at 2.5.
