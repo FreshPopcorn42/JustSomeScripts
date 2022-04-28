@@ -15,7 +15,7 @@ Installs Firefox and uBlock Origin, updates packages.
 Installs Flatpak, updates packages.
 
 ### InstallSetup
-Installs all the basic software I use for working on my computer and updates packages.
+Installs all the basic software I use for working on my computer and updates packages. Credits to andres-erbsen for the browser-extension part: https://gist.github.com/andres-erbsen/1307745
 
 ### ProtocolZeroControl
 Lets you set security questions for "sudo rm -rf /" - as many as you want.  
