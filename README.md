@@ -48,5 +48,8 @@ Helps you regulate display brightness. You should start at 2.5.
 ### NotScripts
 Just stuff that isnt bash.
 
+### Schneewittchen
+A textbased tool that allows quick notes that are automatically saved. Still V1.
+
 ## Contact me
 Im always looking for feedback. If you want to help me with tips and knowledge, contact me via Twitter: @EdwardFetch
