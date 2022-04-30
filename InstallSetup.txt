@@ -107,6 +107,8 @@ sudo apt-get update -y
 apt-get updates
 apt-get install upgrades
 
+#Needed for Schneewittchen
+> /home/$USERNAME/Schneewittchen/
 #Uninstall OnlyOffice
 #flatpak remove org.onlyoffice.desktopeditors
 
