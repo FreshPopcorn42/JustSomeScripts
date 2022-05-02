@@ -3,4 +3,8 @@
 apt update
 apt dist-upgrade
 
+> 'sudo -i' >>  /etc/motd/newOSversion.sh
+>> 'do-release-upgrade -d' >>  /etc/motd/newOSversion.sh
+>> 'rm -- "$0"' >>  /etc/motd/newOSversion.sh
+
 reboot
