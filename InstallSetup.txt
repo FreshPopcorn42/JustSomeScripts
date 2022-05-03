@@ -112,9 +112,13 @@ sudo apt-get update -y
 apt-get updates
 apt-get install upgrades
 
-#Needed for Schneewittchen
+	#Needed for Schneewittchen
+#users[] = cut -d: -f1 /etc/passwd
+#for i in $users
+#do
 > /home/$USERNAME/Schneewittchen/
-#Uninstall OnlyOffice
+#done
+#Uninstall example
 #flatpak remove org.onlyoffice.desktopeditors
 
 reboot
