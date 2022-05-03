@@ -113,12 +113,16 @@ apt-get updates
 apt-get install upgrades
 
 	#Needed for Schneewittchen
+#echo Schneewittchen: Ask for every user-directory? [y/n]
+#read yn
 #users[] = cut -d: -f1 /etc/passwd
-#for i in $users
+#for user in $users
 #do
 > /home/$USERNAME/Schneewittchen/
-#	> /home/$i/Schneewittchen/
+#	> /home/$user/Schneewittchen/
 #done
+
+
 #Uninstall example
 #flatpak remove org.onlyoffice.desktopeditors
 
