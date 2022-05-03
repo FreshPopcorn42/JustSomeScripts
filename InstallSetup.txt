@@ -117,6 +117,7 @@ apt-get install upgrades
 #for i in $users
 #do
 > /home/$USERNAME/Schneewittchen/
+#	> /home/$i/Schneewittchen/
 #done
 #Uninstall example
 #flatpak remove org.onlyoffice.desktopeditors
