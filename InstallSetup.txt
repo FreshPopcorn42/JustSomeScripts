@@ -30,23 +30,28 @@ flatpak install flathub com.usebottles.bottles
 
 flatpak install flathub org.gnome.GTG
 
+	#Music
 #flatpak install flathub com.spotify.Client
 
+	#Comunication
 flatpak install flathub org.signal.Signal
-
-flatpak install flathub org.onlyoffice.desktopeditors
-
-#flatpak install flathub org.libreoffice.LibreOffice
-
 #Mastodor TWITTER REPLACEMENT
 flatpak install flathub social.whalebird.WhalebirdDesktop
 
+	#Office suite
+flatpak install flathub org.onlyoffice.desktopeditors
+#flatpak install flathub org.libreoffice.LibreOffice
+
+
+	#Software development
 #flatpak install flathub com.visualstudio.code
 flatpak install flathub io.atom.Atom
+#https://atom.io/packages/import
+#https://atom.io/packages/git-clone
 
-#Browser
+	#Browser
 flatpak install flathub org.mozilla.firefox
-#Browser-extension:
+	#Browser-extension:
 
 EXTENSIONSDIR="/usr/lib/firefox-addons/extensions"
 TMP="/tmp/firefox-extension-install-temp"
