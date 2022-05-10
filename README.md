@@ -54,5 +54,11 @@ A textbased tool that allows quick notes that are automatically saved. Still V1.
 ### newOSversion
 Downloads and installs the newest version of your OS. You have to reboot once its done.
 
+### NotScripts --> 3D
+I did a Blender tutorial.
+
+### NotScripts --> Websites
+- JDM: My first ever website.
+
 ## Contact me
 Im always looking for feedback. If you want to help me with tips and knowledge, contact me via Twitter: @EdwardFetch
