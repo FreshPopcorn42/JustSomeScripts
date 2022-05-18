@@ -14,40 +14,40 @@ for item in $choice[]
 do
   if [$item == 'update']
   then
-    git pull
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/update.sh
   elif [$item == 'updatePlus']
   then
-    git pull
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/updatePlus.sh
   elif [$item == 'newOSversion']
   then
-    git pull
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/newOSversion.sh
   elif [$item == 'brightness']
   then
-    git pull
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/brightness.sh
   elif [$item == 'SysToFile']
   then
-    git pull
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/SysToFile.sh
   elif [$item == 'Schneewittchen']
   then
-    git pull
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/Schneewittchen.sh
   elif [$item == 'ProxyDoe']
   then
-    git pull
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/ProxyDoe.sh
   elif [$item == 'ProtocolZeroControl']
   then
-    git pull
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/ProtocolZeroControl.sh
   elif [$item == 'InstallSetup']
   then
-    git pull
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/InstallSetup.sh
   elif [$item == 'Flatpak']
   then
-    git pull
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/Flatpak.sh
   elif [$item == 'Firefox']
   then
-    git pull
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/Firefox.sh
   elif [$item == 'CheckIPs']
   then
-    git pull
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/CheckIPs.sh
   fi
 
 rm -rf /home/$USERNAME/Downloads/Readme.md
