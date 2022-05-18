@@ -52,7 +52,7 @@ Just stuff that isnt bash.
 A textbased tool that allows quick notes that are automatically saved. Still V1.
 
 ### newOSversion
-Downloads and installs the newest version of your OS. You have to reboot once its done.
+Downloads and installs the newest version of your OS. You dont have to reboot once its done.
 
 ### NotScripts --> 3D
 I did a Blender tutorial.
