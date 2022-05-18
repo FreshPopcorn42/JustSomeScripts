@@ -10,6 +10,7 @@ Thanks.
 
 ## NEW
 Get my installer.sh and pull all these projects from your commandline! installer.sh will be further improved soon...
+https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/installer.sh
 
 ### Firefox
 Installs Firefox and uBlock Origin, updates packages.
