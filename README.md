@@ -8,6 +8,9 @@ Im an IT-beginner who sometimes writes scripts, just for the sake of it. Most st
 Dont ever run a script you found on the internet without first checking what it ACTUALLY does.
 Thanks.
 
+## NEW
+Get my installer.sh and pull all these projects from your commandline! installer.sh will be further improved soon...
+
 ### Firefox
 Installs Firefox and uBlock Origin, updates packages.
 
