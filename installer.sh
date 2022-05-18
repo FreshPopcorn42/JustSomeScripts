@@ -61,19 +61,47 @@ do
     git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/CheckIPs.sh
   
   elif [$item == 'NotScripts']
-    if [$item ==]
+    echo "Wich one?
+    -3D
+    BackgroundBackup
+    Schneewittchen for Windows [Schneewittchen]
+    Websites
+    "
+    read item
+    if [$item == '3D']
     then
-    
+      git pull https://github.com/FreshPopcorn42/JustSomeScripts/tree/main/NotScripts/3D
+    elif [$item == BackgroundBackup]
+    then
+      git pull https://github.com/FreshPopcorn42/JustSomeScripts/tree/main/NotScripts/BackgroundBackup
+    elif [$item == Schneewittchen]
+    then
+      git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/NotScripts/Schneewittchen.bat
+    elif [$item == Websiter]
+    then
+      echo "Which one?
+      -JDM
+      "
+      if [$item == JDM]
+      then
+      git pull https://github.com/FreshPopcorn42/JustSomeScripts/tree/main/NotScripts/Websites/JDM
+      fi
     fi
   
   elif [$item == 'USB']
-    if [$item ==]
+    echo usb or unmount?
+    read item
+    if [$item == 'usb']
     then
-    
+      git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/USB/usb.sh
+    elif [$item == unmount]
+    then
+      git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/USB/unmount.sh
     fi
  
   elif [$item == 'Wifi']
     echo V1 or V2?
+    read item
     if [$item == 'V1']
     then
       git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/Wifi/wifi_V1.sh
