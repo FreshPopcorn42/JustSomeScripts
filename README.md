@@ -9,7 +9,7 @@ Dont ever run a script you found on the internet without first checking what it 
 Thanks.
 
 ## NEW
-Get my installer.sh and pull all these projects from your commandline! installer.sh will be further improved soon...
+Get my installer.sh and pull all these projects from your commandline! installer.sh will be debugged and further improved soon...
 https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/installer.sh
 
 ### Firefox
