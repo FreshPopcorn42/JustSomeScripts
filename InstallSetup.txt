@@ -3,7 +3,7 @@
 #Before plugging in the SD-card:
 #apt-get install exfat-fuse exfat-utils
 
-sudo apt-get update -y
+apt-get update -y
 apt-get updates
 apt-get install upgrades
 
