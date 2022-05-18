@@ -114,14 +114,23 @@ apt-get updates
 apt-get install upgrades
 
 	#Needed for Schneewittchen
-#echo Schneewittchen: Ask for every user-directory? [y/n]
-#read yn
-#users[] = cut -d: -f1 /etc/passwd
-#for user in $users
-#do
-> /home/$USERNAME/Schneewittchen/
-#	> /home/$user/Schneewittchen/
-#done
+echo Schneewittchen: Ask for every user-directory? [y/n]
+read yn
+if [$yn == '' || $yn == y || $yn == Y]
+then
+	users[] = cut -d: -f1 /etc/passwd
+	for user in $users
+	do
+		echo Make Schneewittchen directory for $user?
+		read yn
+		if [$yn == '' || $yn == y || $yn == Y]
+		then
+			>> /home/$user/Schneewittchen/
+else
+	for user in $users
+	do
+		>> /home/$USERNAME/Schneewittchen/
+fi
 
 
 #Uninstall example
