@@ -43,6 +43,8 @@ flatpak install flathub social.whalebird.WhalebirdDesktop
 #flatpak install flathub org.onlyoffice.desktopeditors
 flatpak install flathub org.libreoffice.LibreOffice
 
+	#Remote desktop
+#flatpak install flathub org.remmina.Remmina
 
 	#Software development
 #flatpak install flathub com.visualstudio.code
