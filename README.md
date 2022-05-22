@@ -62,7 +62,7 @@ Downloads and installs the newest version of your OS. You dont have to reboot on
 I did a Blender tutorial.
 
 ### NotScripts --> Websites
-- JDM: My first ever website. CURRENTLY PULLS FONTS FROM GOOGLE WHEN EXECUTED!
+- JDM: My first ever website. CURRENTLY PULLS FONTS FROM GOOGLE WHEN EXECUTED! https://github.com/FreshPopcorn42/JustSomeScripts/issues/6
 
 ## Contact me
 Im always looking for feedback. If you want to help me with tips and knowledge, contact me via Twitter: @EdwardFetch
