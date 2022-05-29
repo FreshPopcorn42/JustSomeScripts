@@ -20,6 +20,7 @@ Installs Flatpak, updates packages.
 
 ### InstallSetup
 Installs all the basic software I use for working on my computer and updates packages. Credits to andres-erbsen for the browser-extension part: https://gist.github.com/andres-erbsen/1307745
+Also thanks to chiffshinz for the Fedora-specific part: https://gist.github.com/chiffshinz/b548f2b280512df965ef437b830e839c
 
 ### ProtocolZeroControl
 Lets you set security questions for "sudo rm -rf /" - as many as you want.  
