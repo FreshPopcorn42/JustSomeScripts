@@ -3,9 +3,37 @@
 #Before plugging in the SD-card:
 #apt-get install exfat-fuse exfat-utils
 
+if [$OSTYPE == "Ubunu" || $OSTYPE == "Ubuntu Touch"]
+then
+	sudo snap remove firefox
+	rm -r /snap/firefox
+elif [$OSTYPE == "Fedora"]
+then
+	# dnf conf
+	pr "Optimizing DNF configuration for speed."
+	echo 'max_parallel_downloads=10' >> /etc/dnf/dnf.conf
+	echo 'defaultyes=True' >> /etc/dnf/dnf.conf
+
+	# update packages
+	pr "Updating packages..."
+	dnf update -y >> $logfile
+
+	# enable third party repos
+	# add rpm fusion
+	pr "Adding RPM Fusion repos"
+	dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm >> $logfile
+ 
+	dnf update -y >> $logfile
+	
+	# add flathub
+	pr "Adding Flathub"
+	flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo >> $logfile
+fi
+
+
 apt-get update -y
-apt-get updates
-apt-get install upgrades
+#apt-get updates
+#apt-get install upgrades
 
 	#How to remove stuff
 #apt-get remove --purge libreoffice*
@@ -112,8 +140,8 @@ sudo apt install nmap
 flatpak update
 
 sudo apt-get update -y
-apt-get updates
-apt-get install upgrades
+#apt-get updates
+#apt-get install upgrades
 
 	#Needed for Schneewittchen
 echo Schneewittchen: Ask for every user-directory? [y/n]
