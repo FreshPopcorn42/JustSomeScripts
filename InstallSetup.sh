@@ -26,6 +26,7 @@ then
 	dnf update -y >> $logfile
 	sudo dnf install plan -y
 	sudo dnf install kalendar -y
+	sudo dnf install kdeconnect -y
 	
 	# add flathub
 	pr "Adding Flathub"
