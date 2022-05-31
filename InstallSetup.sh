@@ -7,6 +7,9 @@ if [$OSTYPE == "Ubunu" || $OSTYPE == "Ubuntu Touch"]
 then
 	sudo snap remove firefox
 	rm -r /snap/firefox
+	
+	flatpak install flathub org.videolan.VLC
+	
 elif [$OSTYPE == "Fedora"]
 then
 	# dnf conf
@@ -27,6 +30,8 @@ then
 	sudo dnf install plan -y
 	sudo dnf install kalendar -y
 	sudo dnf install kdeconnect -y
+	sudo dnf install yakuake -y
+	sudo dnf install krusader -y
 	
 	# add flathub
 	pr "Adding Flathub"
@@ -52,15 +57,13 @@ apt-get install wifite
 
 #flatpak
 
-flatpak install flathub org.videolan.VLC
-
 flatpak install flathub fr.romainvigier.MetadataCleaner
 
 flatpak install flathub com.github.tchx84.Flatseal
 
 flatpak install flathub com.usebottles.bottles
 
-flatpak install flathub org.gnome.GTG
+#flatpak install flathub org.gnome.GTG
 
 	#Music
 #flatpak install flathub com.spotify.Client
