@@ -32,6 +32,7 @@ then
 	sudo dnf install kdeconnect -y
 	sudo dnf install yakuake -y
 	sudo dnf install krusader -y
+	dnf remove dolphin -y
 	
 	# add flathub
 	pr "Adding Flathub"
