@@ -14,6 +14,7 @@ then
       	sudo apt install flatpak
 	flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     
+    	#flatpak install flathub org.gnome.GTG
 	
 	sudo snap remove firefox
 	rm -r /snap/firefox
@@ -54,10 +55,6 @@ apt-get update -y
 #apt-get updates
 #apt-get install upgrades
 
-	#How to remove stuff
-#apt-get remove --purge libreoffice*
-#apt-get clean
-#apt-get autoremove
 
 apt-get install macchanger
 
@@ -74,7 +71,6 @@ flatpak install flathub com.github.tchx84.Flatseal
 
 flatpak install flathub com.usebottles.bottles
 
-#flatpak install flathub org.gnome.GTG
 
 	#Music
 #flatpak install flathub com.spotify.Client
@@ -92,8 +88,8 @@ flatpak install flathub org.libreoffice.LibreOffice
 #flatpak install flathub org.remmina.Remmina
 
 	#Software development
-#flatpak install flathub com.visualstudio.code
-flatpak install flathub io.atom.Atom
+flatpak install flathub com.visualstudio.code
+#flatpak install flathub io.atom.Atom
 #https://atom.io/packages/import
 #https://atom.io/packages/git-clone
 
