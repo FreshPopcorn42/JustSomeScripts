@@ -3,8 +3,18 @@
 #Before plugging in the SD-card:
 #apt-get install exfat-fuse exfat-utils
 
+
+
 if [$OSTYPE == "Ubunu" || $OSTYPE == "Ubuntu Touch"]
 then
+	pr "Adding Flathub"
+	sudo apt install flatpak
+	sudo add-apt-repository ppa:flatpak/stable
+      	sudo apt update
+      	sudo apt install flatpak
+	flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    
+	
 	sudo snap remove firefox
 	rm -r /snap/firefox
 	
