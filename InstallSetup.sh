@@ -75,6 +75,9 @@ flatpak install flathub io.exodus.Exodus --user
 
 	#Music
 #flatpak install flathub com.spotify.Client
+	uninstall elisa from Fedora
+flatpak install flathub org.kde.elisa
+
 
 	#Comunication
 flatpak install flathub org.signal.Signal
