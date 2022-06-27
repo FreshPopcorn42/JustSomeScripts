@@ -48,6 +48,10 @@ then
 	# add flathub
 	pr "Adding Flathub"
 	flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo >> $logfile
+	
+	#Teams
+	pr "Installing Teams..."
+	flatpak install flathub com.microsoft.Teams
 fi
 
 
