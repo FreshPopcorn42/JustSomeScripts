@@ -71,6 +71,7 @@ flatpak install flathub com.github.tchx84.Flatseal
 
 flatpak install flathub com.usebottles.bottles
 
+flatpak install flathub io.exodus.Exodus --user
 
 	#Music
 #flatpak install flathub com.spotify.Client
