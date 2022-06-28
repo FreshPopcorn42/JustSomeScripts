@@ -80,7 +80,6 @@ flatpak install flathub io.exodus.Exodus --user
 
 	#Music
 #flatpak install flathub com.spotify.Client
-	!uninstall elisa from Fedora!
 if [$OSTYPE != "Ubuntu Touch"]
 then
 	flatpak install flathub org.kde.elisa
