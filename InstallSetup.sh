@@ -153,7 +153,7 @@ then
 else
 	for user in $users
 	do
-		>> /home/$USERNAME/Schneewittchen/
+		>> /home/$user/Schneewittchen/
 fi
 
 
