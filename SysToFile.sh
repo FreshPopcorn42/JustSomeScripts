@@ -12,6 +12,11 @@ $SHELL >> /home/$username/MySys$date.sh
 
 '\n' >> /home/$username/MySys$date.sh
 
+'#Your router' >> /home/$username/MySys$date.sh
+ip route >> /home/$username/MySys$date.sh
+
+'\n' >> /home/$username/MySys$date.sh
+
 #CPU/RAM consumtion
 '#Top' >> /home/$username/MySys$date.sh
 top >> /home/$username/MySys$date.sh
