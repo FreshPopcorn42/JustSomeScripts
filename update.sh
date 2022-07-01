@@ -1,7 +1,6 @@
 #!/bin/bash
 
-apt-get update
-apt-get install upgrade
+apt-get update && apt-get install upgrade -y
 
 
 flatpak update
