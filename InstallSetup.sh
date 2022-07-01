@@ -60,7 +60,7 @@ apt-get update -y
 #apt-get updates
 #apt-get install upgrades
 
-
+apt install git
 apt-get install macchanger
 
 apt-get install wifite
