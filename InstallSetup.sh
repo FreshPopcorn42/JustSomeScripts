@@ -83,6 +83,7 @@ flatpak install flathub io.exodus.Exodus --user
 if [$OSTYPE != "Ubuntu Touch"]
 then
 	flatpak install flathub org.kde.elisa
+	flatpak install flathub org.ksnip.ksnip
 fi
 
 	#Comunication
