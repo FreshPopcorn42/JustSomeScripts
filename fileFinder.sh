@@ -9,6 +9,7 @@ then
   echo "Enter name of file"
   read name
 elif [$wtd == "-d"]
+then
 
  #actually find file
   echo "In current directory:"
@@ -17,7 +18,6 @@ elif [$wtd == "-d"]
   echo "In all directorys:"
   cat / | grep $name.* && grep .$name.* | less
   
-then
 
 #get directory name
   echo "Enter name of directory"
@@ -29,4 +29,20 @@ then
   
   echo "In all directorys:"
   cat / | grep /$name && grep /.$name | less
+  
+ 
+elif [$wtd == "-a"]
+then
+
+
+echo "Directory in current directory:"
+  cat ./ | grep /$name && grep /.$name | less
+ echo "file in current directory:"
+  cat ./ | grep $name.* && grep .$name.* | less
+  
+ echo "Directory from all directorys:"
+  cat / | grep /$name && grep /.$name | less
+ echo "Files from all directories:"
+  cat / | grep $name.* && grep .$name.* | less
+
 fi
