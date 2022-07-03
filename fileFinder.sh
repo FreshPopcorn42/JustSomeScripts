@@ -15,7 +15,7 @@ then
   echo "In current directory:"
   cat ./ | grep $name.* && grep .$name.* | less
  
-  echo "In all directorys:"
+  echo "In all directories:"
   cat / | grep $name.* && grep .$name.* | less
   
 
@@ -27,7 +27,7 @@ then
   echo "In current directory:"
   cat ./ | grep /$name && grep /.$name | less
   
-  echo "In all directorys:"
+  echo "In all directories:"
   cat / | grep /$name && grep /.$name | less
   
  
@@ -37,10 +37,10 @@ then
 
 echo "Directory in current directory:"
   cat ./ | grep /$name && grep /.$name | less
- echo "file in current directory:"
+ echo "File in current directory:"
   cat ./ | grep $name.* && grep .$name.* | less
   
- echo "Directory from all directorys:"
+ echo "Directory from all directories:"
   cat / | grep /$name && grep /.$name | less
  echo "Files from all directories:"
   cat / | grep $name.* && grep .$name.* | less
