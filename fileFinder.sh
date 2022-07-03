@@ -10,14 +10,22 @@ then
   read name
 elif [$wtd == "-d"]
 
-#actually find file
-cat / | grep $name.*
+ #actually find file
+  echo "In current directory:"
+  cat ./ | grep $name.* | less
+
+  echo "In all directorys:"
+  cat / | grep $name.* | less
 then
 
 #get directory name
   echo "Enter name of directory"
   read name
   
-  #actually find directory
-  cat / | grep /$name
+ #actually find directory
+  echo "In current directory:"
+  cat ./ | grep /$name | less
+  
+  echo "In all directorys:"
+  cat / | grep /$name | less
 fi
