@@ -12,10 +12,11 @@ elif [$wtd == "-d"]
 
  #actually find file
   echo "In current directory:"
-  cat ./ | grep $name.* | less
-
+  cat ./ | grep $name.* && grep .$name.* | less
+ 
   echo "In all directorys:"
-  cat / | grep $name.* | less
+  cat / | grep $name.* && grep .$name.* | less
+  
 then
 
 #get directory name
@@ -24,8 +25,8 @@ then
   
  #actually find directory
   echo "In current directory:"
-  cat ./ | grep /$name | less
+  cat ./ | grep /$name && grep /.$name | less
   
   echo "In all directorys:"
-  cat / | grep /$name | less
+  cat / | grep /$name && grep /.$name | less
 fi
