@@ -39,7 +39,7 @@ Update in 1 instead of 2 steps
 Delete useless packages, update, reboot.
 
 ### fileFinder
-Lets you search files and directorys in the current directory and all directories at the same time. Doesnt support search for hidden files just yet. -d for searching a directory, -f for searching a file.
+Lets you search files and directories in the current directory and all directories at the same time. Doesnt support search for hidden files and directories just yet. -d for searching a directory, -f for searching a file.
 
 ### Wifi
 Should kind of automate wifi-connection. Use addPassword-script for extending the list of your "saved" passwords. DO NOT USE FOR HACKING WITHOUT PERMISSION!
