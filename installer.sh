@@ -7,8 +7,9 @@ while read line; do echo $line; done < /home/$USERNAME/Downloads/Readme.md
 echo \n
 echo "Which script may I download for you dearest? 
 Enter one after one."
-read choice[]
-read choice
+while []
+do
+read choice[i]
 
 for item in $choice[]
 do
@@ -19,6 +20,10 @@ do
   elif [$item == 'updatePlus']
   then
     git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/updatePlus.sh
+  
+  elif [$item == 'fileFinder']
+  then
+    git pull https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/fileFinder.sh
   
   elif [$item == 'newOSversion']
   then

@@ -7,9 +7,10 @@ apt dist-upgrade
 'do-release-upgrade -d' >> /etc/motd/newOSversion.sh
 "reboot" >>  /etc/motd/newOSversion.sh
 
-"'apt-get update' >> /etc/motd/a.sh" >> /etc/motd/newOSversion.sh
-"'apt-get update -y' >> /etc/motd/a.sh" >> /etc/motd/newOSversion.sh
-"'apt-get install upgrade' >> /etc/motd/a.sh" >> /etc/motd/newOSversion.sh
+#"'apt-get update' >> /etc/motd/a.sh" >> /etc/motd/newOSversion.sh
+"'apt-get update -y' > /etc/motd/a.sh" >> /etc/motd/newOSversion.sh
+#"'apt-get install upgrade' >> /etc/motd/a.sh" >> /etc/motd/newOSversion.sh
+"'echo `Im done. Your system is now ready.`' >> /etc/motd/a.sh" >> /etc/motd/newOSversion.sh
 "'rm -rf /etc/motd/newOSversion.sh' >> /etc/motd/a.sh" >> /etc/motd/a.sh" >> /etc/motd/newOSversion.sh
 "'rm -- ´$0´' >> /etc/motd/a.sh" >> /etc/motd/newOSversion.sh
 reboot
