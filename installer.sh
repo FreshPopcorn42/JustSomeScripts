@@ -7,9 +7,14 @@ while read line; do echo $line; done < /home/$USERNAME/Downloads/Readme.md
 echo \n
 echo "Which script may I download for you dearest? 
 Enter one after one."
-while []
+
+i = 0
 do
-read choice[i]
+  read choice[i]
+  i++
+while [choice[i] != ""]
+
+
 
 for item in $choice[]
 do
