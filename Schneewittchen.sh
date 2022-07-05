@@ -28,24 +28,25 @@ start() {
 
     read a
     if [$a == 'exit' || $a == 'Exit' || $a == '']
-    do
+    then
         exit
     elif [$a == 'new' || $a == 'New']
-    do  new
+    then  new
     elif [$a == 'search' || $a == 'search']
-    do
+    then
         search
     elif [$a == 'help' ||$a == 'Help']
-    do
+    then
         help
     elif [$a == 'del' || $a == 'Del']
-    do
+    then
         del
     elif [$a == 'color' || $a == 'Color']
-    do
+    then
         color
     #If all is false, go to help
     elif [$num == 2]
+    then
         help
     else
         $num += 1
@@ -91,6 +92,7 @@ searchFile() {
     echo                                  ~Search~
     echo\n
     echo You can only search documents that are located in the Schneewitchen path.\nDefault: /home/$USERNAME/Schneewittchen/
+    read ok
     clear
     #Actual searchmode
     echo\n
@@ -107,9 +109,15 @@ searchFile() {
 
     #Does it exist? If yes, open it.
     if [exist /home/$USERNAME/Schneewittchen/$search.*]
-    do
+    then
         start /home/$USERNAME/Schneewittchen/$search.*
+
+    elif [exist /home/$USERNAME/Schneewittchen/$search]
+    then
+        start /home/$USERNAME/Schneewittchen/$search
+
     elif [$search == 'x' || $search == 'X']
+    then
         start
     #If file doesnt exist:
     else
@@ -206,30 +214,34 @@ help() {
     echo \n
 
     #Help for: new document
+    echo New note
     echo Type "New" for creating a new note.
-    echo Every note gets automatically saved in Documents\Schneewittchen. The filename is always the current date.
+    echo Every note gets automatically saved in /home/$USERNAME/Schneewittchen. The filename is always the current date.
     echo If you write more than one note on the same day, they are both saved in the same file,
     echo but marked with timestamps.
     echo \n
     echo \n
 
     #Help for: search document
+    echo Search
     echo If you wanna open an existing note, just type "Search".
     echo Then simply write the name of the file you are looking for
-    echo (You may want to rename your most important files fo this purpose).
+    echo (You may want to rename your most important files for this purpose).
     echo This function is only able to see files that are located at the Schneewitchen path,
     echo default is /home/$USERNAME/Schneewittchen.
     echo \n
     echo \n
 
     #Help for: close session
+    echo Exit
     echo For exiting the program, simply type "exit", press the big red button
     echo in the right top corner or press enter.
     echo \n
     echo \n
 
     #Help for: delete document
-    echo for deleting a document, type 'del'.
+    echo Delete notes
+    echo For deleting a document, type 'del'.
     echo This function is only able to see files that are located at the Schneewitchen path,
     echo default is /home/$USERNAME/Schneewittchen.
     echo \n
