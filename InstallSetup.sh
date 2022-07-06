@@ -21,6 +21,10 @@ then
 	
 	flatpak install flathub org.videolan.VLC
 	
+	elif [$OSTYPE == "Ubuntu Server"]
+then
+	snap install nextcloud
+	
 elif [$OSTYPE == "Fedora"]
 then
 	# dnf conf
@@ -69,6 +73,8 @@ apt-get install wifite
 #apt install clonezilla -y
 
 #flatpak
+
+flatpak install flathub app.organicmaps.desktop
 
 flatpak install flathub fr.romainvigier.MetadataCleaner
 
