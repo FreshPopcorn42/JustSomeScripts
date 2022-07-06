@@ -117,6 +117,10 @@ ProtectSystem=full
 """
 	$NAVIDROMeSystemD > /etc/systemd/system/navidrome.servic
 	
+	sudo systemctl daemon-reload
+	sudo systemctl start navidrome.service
+	sudo systemctl status navidrome.service
+	
 	#NAVIDROME on startup
 	sudo systemctl enable navidrome.service
 	
