@@ -23,6 +23,15 @@ then
 	
 	elif [$OSTYPE == "Ubuntu Server"]
 then
+	#PROXY:
+	'export HTTP_PROXY="[username]:[password]@[proxy-web-or-IP-address]:[port-number]"' >> /etc/environment
+	'export HTTPS_PROXY="[username]:[password]@[proxy-web-or-IP-address]:[port-number]"' >> /etc/environment
+	'export FTP_PROXY="[username]:[password]@ [proxy-web-or-IP-address]:[port-number]"' >> /etc/environment
+	'...' >> /etc/environment
+	'export NO_PROXY="localhost,127.0.0.1,::1"Copied!' >> /etc/environment
+	
+	sudo apt-get install apache2 libapache2-mod-php7.2 php7.2 php7.2-mysql mysql-server
+	sudo apt-get install phpmyadmin
 	snap install nextcloud
 	
 elif [$OSTYPE == "Fedora"]
