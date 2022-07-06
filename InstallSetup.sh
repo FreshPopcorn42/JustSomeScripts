@@ -23,6 +23,7 @@ then
 	
 	elif [$OSTYPE == "Ubuntu Server"]
 then
+	apt-get install upgrade -y
 	#PROXY:
 	HTTP:
 	read http
@@ -50,8 +51,8 @@ then
 	sudo apt install vim ffmpeg
 	
 	#Create directory structure
-	sudo install -d -o <user> -g <group> /opt/navidrome
-	sudo install -d -o <user> -g <group> /var/lib/navidrome
+	sudo install -d -o <god> -g <users> /opt/navidrome
+	sudo install -d -o <god> -g <users> /var/lib/navidrome
 	
 	#Get NAVIDROME
 	wget https://github.com/navidrome/navidrome/releases/download/v0.XX.0/navidrome_0.XX.0_Linux_x86_64.tar.gz -O Navidrome.tar.gz
