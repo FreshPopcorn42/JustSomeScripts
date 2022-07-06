@@ -53,6 +53,11 @@ then
 	sudo install -d -o <user> -g <group> /opt/navidrome
 	sudo install -d -o <user> -g <group> /var/lib/navidrome
 	
+	#Get NAVIDROME
+	wget https://github.com/navidrome/navidrome/releases/download/v0.XX.0/navidrome_0.XX.0_Linux_x86_64.tar.gz -O Navidrome.tar.gz
+	sudo tar -xvzf Navidrome.tar.gz -C /opt/navidrome/
+	sudo chown -R <user>:<group> /opt/navidrome
+	
 	#Config file:
 	MusicFolder = "<library_path>" > /var/lib/navidrome/navidrome.toml
 	
@@ -105,13 +110,10 @@ ProtectSystem=full
 # You can customize some Navidrome config options by setting environment variables here. Ex:
 #Environment=ND_BASEURL="/navidrome"
 """
-	$NAVIDROMeSystemD > /etc/systemd/system/navidrome.service
-
+	$NAVIDROMeSystemD > /etc/systemd/system/navidrome.servic
 	
-		#Get NAVIDROME
-	wget https://github.com/navidrome/navidrome/releases/download/v0.XX.0/navidrome_0.XX.0_Linux_x86_64.tar.gz -O Navidrome.tar.gz
-	sudo tar -xvzf Navidrome.tar.gz -C /opt/navidrome/
-	sudo chown -R <user>:<group> /opt/navidrome
+	#NAVIDROME on startup
+	sudo systemctl enable navidrome.service
 	
 	
 elif [$OSTYPE == "Fedora"]
