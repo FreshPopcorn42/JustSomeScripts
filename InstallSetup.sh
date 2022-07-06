@@ -44,6 +44,25 @@ then
 	snap install nextcloud
 	sudo snap refresh
 	
+	#NAVIDROME
+	sudo apt update
+	sudo apt upgrade
+	sudo apt install vim ffmpeg
+	
+	#Create directory structure
+	sudo install -d -o <user> -g <group> /opt/navidrome
+	sudo install -d -o <user> -g <group> /var/lib/navidrome
+	
+	#Config file:
+	MusicFolder = "<library_path>" > /var/lib/navidrome
+
+	
+		#Get NAVIDROME
+	wget https://github.com/navidrome/navidrome/releases/download/v0.XX.0/navidrome_0.XX.0_Linux_x86_64.tar.gz -O Navidrome.tar.gz
+	sudo tar -xvzf Navidrome.tar.gz -C /opt/navidrome/
+	sudo chown -R <user>:<group> /opt/navidrome
+	
+	
 elif [$OSTYPE == "Fedora"]
 then
 	# dnf conf
