@@ -21,6 +21,7 @@ Installs Flatpak, updates packages.
 ### InstallSetup
 Installs all the basic software I use for working on my computer and updates packages.
 Thanks to chiffshinz for parts of the Fedora-specific part: https://gist.github.com/chiffshinz/b548f2b280512df965ef437b830e839c
+This script might be useful if youre using either Fedora, Ubuntu, Ubuntu Touch or Ubuntu Server.
 
 ### ProtocolZeroControl
 Lets you set security questions for "sudo rm -rf /" - as many as you want.  
