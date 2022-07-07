@@ -25,6 +25,7 @@ then
 then
 	apt-get install upgrade -y
 	#PROXY:
+	echo Proxys:
 	HTTP:
 	read http
 	HTTPS:
