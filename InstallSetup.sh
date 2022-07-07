@@ -56,7 +56,7 @@ then
 	chown -R users /opt/navidrome
 	
 	touch /var/lib/navidrome/navidrome.toml
-	echo "/home/$USER/Music" > /var/lib/navidrome/navidrome.toml
+	echo "/home/god/Music" > /var/lib/navidrome/navidrome.toml
 	
 	#Get NAVIDROME
 	wget https://github.com/navidrome/navidrome/releases/download/v0.XX.0/navidrome_0.XX.0_Linux_x86_64.tar.gz -O Navidrome.tar.gz
