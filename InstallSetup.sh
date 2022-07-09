@@ -125,6 +125,10 @@ ProtectSystem=full
 	#NAVIDROME on startup
 	sudo systemctl enable navidrome.service
 	
+#Reverse proxy
+	apt-get install nginx -y
+	service nginx start
+	git clone JDM > /var/www/html
 	
 elif [$OSTYPE == "Fedora"]
 then
