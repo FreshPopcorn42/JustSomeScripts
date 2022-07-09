@@ -46,7 +46,7 @@ then
 	snap install nextcloud
 	sudo snap refresh
 	
-	#NAVIDROME
+#NAVIDROME			LETS DO IT WITH DOCKER INSTEAD!!!!!!!!!!!
 	sudo apt update
 	sudo apt upgrade
 	sudo apt install vim ffmpeg
@@ -128,7 +128,8 @@ ProtectSystem=full
 #Reverse proxy
 	apt-get install nginx -y
 	service nginx start
-	git clone JDM > /var/www/html
+		#Private website
+	git clone https://github.com/FreshPopcorn42/JustSomeScripts/tree/main/NotScripts/Websites/JDM > /var/www/html
 	
 elif [$OSTYPE == "Fedora"]
 then
