@@ -42,7 +42,8 @@ then
 	elif [$OSTYPE == "Ubuntu Server"]
 then
 	apt-get install upgrade -y
-	#PROXY:
+
+#PROXY:
 	echo Proxys:
 	HTTP:
 	read http
@@ -59,6 +60,7 @@ then
 	'...' >> /etc/environment
 	'export NO_PROXY="localhost,127.0.0.1,::1"Copied!' >> /etc/environment
 	
+#LAMP
 	sudo apt-get install apache2 libapache2-mod-php7.2 php7.2 php7.2-mysql mysql-server
 	sudo apt-get install phpmyadmin
 	snap install nextcloud
