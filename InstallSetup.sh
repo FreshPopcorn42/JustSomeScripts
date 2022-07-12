@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Before plugging in the SD-card:
-#apt-get install exfat-fuse exfat-utils
+#apt-get install exfat-fuse exfat-utils -y
 
 
 
