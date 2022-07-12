@@ -27,28 +27,6 @@ then
 	
 	'\n' >> /etc/profile.d/proxy.sh
 
-
-#For curl
-'# For curl' >> /etc/profile.d/proxy.sh
-'export HTTP_PROXY="http://$http/"' >> /etc/profile.d/proxy.sh
-
-'export HTTPS_PROXY="http://$https/"' >> /etc/profile.d/proxy.sh
-
-'export FTP_PROXY="http://$ftp/"' >> /etc/profile.d/proxy.sh
-
-'export SFTP_PROXY="http://$sftp/"' >> /etc/profile.d/proxy.sh
-
-'export NO_PROXY="127.0.0.1,localhost"' >> /etc/profile.d/proxy.sh
-
-#Make it executable
-sudo chmod +x  /etc/profile.d/proxy.sh
-
-#Make stuff happen
-source /etc/profile.d/proxy.sh
-
-#Show whats up
-env | grep -i proxy
-	
 	
 	pr "Adding Flathub"
 	sudo apt install flatpak
@@ -87,29 +65,6 @@ then
 	'export NO_PROXY="localhost,127.0.0.1,::1"Copied!' >> /etc/environment
 	
 	'\n' >> /etc/profile.d/proxy.sh
-
-
-#For curl
-'# For curl' >> /etc/profile.d/proxy.sh
-'export HTTP_PROXY="http://$http/"' >> /etc/profile.d/proxy.sh
-
-'export HTTPS_PROXY="http://$https/"' >> /etc/profile.d/proxy.sh
-
-'export FTP_PROXY="http://$ftp/"' >> /etc/profile.d/proxy.sh
-
-'export SFTP_PROXY="http://$sftp/"' >> /etc/profile.d/proxy.sh
-
-'export NO_PROXY="127.0.0.1,localhost"' >> /etc/profile.d/proxy.sh
-
-#Make it executable
-sudo chmod +x  /etc/profile.d/proxy.sh
-
-#Make stuff happen
-source /etc/profile.d/proxy.sh
-
-#Show whats up
-env | grep -i proxy
-	
 	
 	
 #LAMP
