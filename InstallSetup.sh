@@ -7,6 +7,24 @@
 
 if [$OSTYPE == "Ubunu" || $OSTYPE == "Ubuntu Touch"]
 then
+
+	#PROXY:
+	echo Proxys:
+	HTTP:
+	read http
+	HTTPS:
+	read https
+	FTP:
+	read ftp
+	SFTP:
+	read sftp
+	'export HTTP_PROXY="[username]:[password]@[proxy-web-or-IP-address]:[$http]"' >> /etc/environment
+	'export HTTPS_PROXY="[username]:[password]@[proxy-web-or-IP-address]:[$https]"' >> /etc/environment
+	'export FTP_PROXY="[username]:[password]@ [proxy-web-or-IP-address]:[$ftp]"' >> /etc/environment
+	'export SFTP_PROXY="[username]:[password]@ [proxy-web-or-IP-address]:[$sftp]"' >> /etc/environment
+	'...' >> /etc/environment
+	'export NO_PROXY="localhost,127.0.0.1,::1"Copied!' >> /etc/environment
+	
 	pr "Adding Flathub"
 	sudo apt install flatpak
 	sudo add-apt-repository ppa:flatpak/stable
