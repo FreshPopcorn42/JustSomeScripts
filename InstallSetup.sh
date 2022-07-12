@@ -349,6 +349,7 @@ else
 		>> /home/$user/Schneewittchen/
 fi
 
+git clone https://github.com/FreshPopcorn42/JustSomeScripts/blob/main/Schneewittchen.sh >> /bin
 
 #Uninstall example
 #flatpak remove org.onlyoffice.desktopeditors
