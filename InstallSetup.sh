@@ -340,6 +340,9 @@ then
 		if [$yn == '' || $yn == y || $yn == Y]
 		then
 			>> /home/$user/Schneewittchen/
+
+		fi
+
 else
 	for user in $users
 	do
