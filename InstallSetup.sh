@@ -149,9 +149,12 @@ ProtectSystem=full
 	apt-get install nginx -y
 	service nginx start
 	
+	###################################
+	###	ADD REVERSE PROXY	###
+	###################################
 	
-	
-		#Private website
+		
+#Private website
 	git clone https://github.com/FreshPopcorn42/JustSomeScripts/tree/main/NotScripts/Websites/JDM > /var/www/html
 	
 elif [$OSTYPE == "Fedora"]
