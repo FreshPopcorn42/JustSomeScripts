@@ -233,6 +233,7 @@ then
 	sudo dnf install krusader -y
 	dnf remove dolphin -y
 	dnf remove elisa -y
+	dnf remove ksnip -y
 	
 	# add flathub
 	pr "Adding Flathub"
