@@ -25,6 +25,31 @@ then
 	'...' >> /etc/environment
 	'export NO_PROXY="localhost,127.0.0.1,::1"Copied!' >> /etc/environment
 	
+	'\n' >> /etc/profile.d/proxy.sh
+
+
+#For curl
+'# For curl' >> /etc/profile.d/proxy.sh
+'export HTTP_PROXY="http://$http/"' >> /etc/profile.d/proxy.sh
+
+'export HTTPS_PROXY="http://$https/"' >> /etc/profile.d/proxy.sh
+
+'export FTP_PROXY="http://$ftp/"' >> /etc/profile.d/proxy.sh
+
+'export SFTP_PROXY="http://$sftp/"' >> /etc/profile.d/proxy.sh
+
+'export NO_PROXY="127.0.0.1,localhost"' >> /etc/profile.d/proxy.sh
+
+#Make it executable
+sudo chmod +x  /etc/profile.d/proxy.sh
+
+#Make stuff happen
+source /etc/profile.d/proxy.sh
+
+#Show whats up
+env | grep -i proxy
+	
+	
 	pr "Adding Flathub"
 	sudo apt install flatpak
 	sudo add-apt-repository ppa:flatpak/stable
@@ -60,6 +85,32 @@ then
 	'export SFTP_PROXY="[username]:[password]@ [proxy-web-or-IP-address]:[$sftp]"' >> /etc/environment
 	'...' >> /etc/environment
 	'export NO_PROXY="localhost,127.0.0.1,::1"Copied!' >> /etc/environment
+	
+	'\n' >> /etc/profile.d/proxy.sh
+
+
+#For curl
+'# For curl' >> /etc/profile.d/proxy.sh
+'export HTTP_PROXY="http://$http/"' >> /etc/profile.d/proxy.sh
+
+'export HTTPS_PROXY="http://$https/"' >> /etc/profile.d/proxy.sh
+
+'export FTP_PROXY="http://$ftp/"' >> /etc/profile.d/proxy.sh
+
+'export SFTP_PROXY="http://$sftp/"' >> /etc/profile.d/proxy.sh
+
+'export NO_PROXY="127.0.0.1,localhost"' >> /etc/profile.d/proxy.sh
+
+#Make it executable
+sudo chmod +x  /etc/profile.d/proxy.sh
+
+#Make stuff happen
+source /etc/profile.d/proxy.sh
+
+#Show whats up
+env | grep -i proxy
+	
+	
 	
 #LAMP
 	sudo apt-get install apache2 libapache2-mod-php7.2 php7.2 php7.2-mysql mysql-server
