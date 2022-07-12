@@ -188,7 +188,7 @@ ProtectSystem=full
 # You can customize some Navidrome config options by setting environment variables here. Ex:
 #Environment=ND_BASEURL="/navidrome"
 """
-	$NAVIDROMeSystemD > /etc/systemd/system/navidrome.servic
+	$NAVIDROMeSystemD > /etc/systemd/system/navidrome.service
 	
 	sudo systemctl daemon-reload
 	sudo systemctl start navidrome.service
@@ -198,8 +198,8 @@ ProtectSystem=full
 	sudo systemctl enable navidrome.service
 	
 #Reverse proxy
-	apt-get install nginx -y
-	service nginx start
+	#apt-get install nginx -y
+	#service nginx start
 	
 	###################################
 	###	ADD REVERSE PROXY	###
@@ -271,11 +271,7 @@ flatpak install flathub io.exodus.Exodus --user
 
 	#Music
 #flatpak install flathub com.spotify.Client
-if [$OSTYPE != "Ubuntu Touch"]
-then
-	flatpak install flathub org.kde.elisa
-	flatpak install flathub org.ksnip.ksnip
-fi
+
 
 	#Comunication
 flatpak install flathub org.signal.Signal
@@ -353,4 +349,9 @@ fi
 #Uninstall example
 #flatpak remove org.onlyoffice.desktopeditors
 
+if [$OSTYPE != "Ubuntu Touch"]
+then
+	flatpak install flathub org.kde.elisa
+	flatpak install flathub org.ksnip.ksnip
+fi
 reboot
