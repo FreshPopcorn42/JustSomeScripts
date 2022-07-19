@@ -3,10 +3,7 @@
 #Before plugging in the SD-card:
 #apt-get install exfat-fuse exfat-utils -y
 
-#ExDrive encryption
-add-apt-repository ppa:unit193/encryption
-apt update
-apt install veracrypt
+
 
 if [$OSTYPE == "Ubunu" || $OSTYPE == "Ubuntu Touch"]
 then
@@ -29,6 +26,11 @@ then
 	'export NO_PROXY="localhost,127.0.0.1,::1"Copied!' >> /etc/environment
 	
 	'\n' >> /etc/profile.d/proxy.sh
+
+#ExDrive encryption
+	add-apt-repository ppa:unit193/encryption
+	apt update
+	apt install veracrypt
 
 	
 	pr "Adding Flathub"
@@ -69,7 +71,11 @@ then
 	
 	'\n' >> /etc/profile.d/proxy.sh
 	
-	
+#ExDrive encryption
+	add-apt-repository ppa:unit193/encryption
+	apt update
+	apt install veracrypt
+
 #LAMP
 	sudo apt-get install apache2 libapache2-mod-php7.2 php7.2 php7.2-mysql mysql-server
 	sudo apt-get install phpmyadmin
@@ -192,6 +198,9 @@ then
 	dnf remove dolphin -y
 	dnf remove elisa -y
 	dnf remove ksnip -y
+	
+#ExtDrive encryption
+	dnf install veracrypt -y
 	
 	# add flathub
 	pr "Adding Flathub"
