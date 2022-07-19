@@ -3,7 +3,10 @@
 #Before plugging in the SD-card:
 #apt-get install exfat-fuse exfat-utils -y
 
-
+#ExDrive encryption
+add-apt-repository ppa:unit193/encryption
+apt update
+apt install veracrypt
 
 if [$OSTYPE == "Ubunu" || $OSTYPE == "Ubuntu Touch"]
 then
