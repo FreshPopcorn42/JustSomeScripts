@@ -4,6 +4,7 @@
 #apt-get install exfat-fuse exfat-utils -y
 
 OS=`lowercase \`uname\``
+#https://stackoverflow.com/questions/394230/how-to-detect-the-os-from-a-bash-script
 
 if ["${OS}" == "Ubunu" || "${OS}" == "Ubuntu Touch"]
 then
