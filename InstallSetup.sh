@@ -3,9 +3,9 @@
 #Before plugging in the SD-card:
 #apt-get install exfat-fuse exfat-utils -y
 
+OS=`lowercase \`uname\``
 
-
-if [$OSTYPE == "Ubunu" || $OSTYPE == "Ubuntu Touch"]
+if ["${OS}" == "Ubunu" || "${OS}" == "Ubuntu Touch"]
 then
 
 	#PROXY:
@@ -48,7 +48,7 @@ then
 	flatpak install flathub org.videolan.VLC
 
 
-elif [$OSTYPE == "Ubuntu Server"]
+elif ["${OS}" == "Ubuntu Server"]
 then
 	apt-get install upgrade -y
 
@@ -173,7 +173,7 @@ ProtectSystem=full
 #Private website
 	git clone https://github.com/FreshPopcorn42/JustSomeScripts/tree/main/NotScripts/Websites/JDM > /var/www/html
 	
-elif [$OSTYPE == "Fedora"]
+elif ["${OS}" == "Fedora"]
 then
 	# dnf conf
 	pr "Optimizing DNF configuration for speed."
@@ -211,7 +211,7 @@ then
 	flatpak install flathub com.microsoft.Teams
 fi
 
-if [$OSTYPE != "Ubuntu Server"]
+if ["${OS}" != "Ubuntu Server"]
 then
 apt-get update -y
 #apt-get updates
